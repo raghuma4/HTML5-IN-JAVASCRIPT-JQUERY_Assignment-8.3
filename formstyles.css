@@ -1,0 +1,43 @@
+	/* define a style for form */
+	form
+	{
+		border-radius: 5px;
+		width: 40%;
+		margin: 15px;
+		padding: 10px 12px;
+		background:  #B0BC4A;
+		font-family: Arial;
+	}
+
+	/* common style for text and number fields */
+	input[type=text], input[type=number]
+	{
+		padding: 8px 10px;
+		margin: 10px 15px;				 	
+		width: 75%;				    	 	
+		display: block;    		
+	}
+
+	/* set less width to number field */
+	input[type=number]
+	{
+		width: 30%;			 
+	}
+
+	/* set margins for labels */
+	label.static
+	{
+		margin: 10px 15px;			
+	}
+	
+	/* style for paragraph with id note */
+	#note
+	{
+		font-size: 18px;
+		color: black;
+		font-weight: bold;
+		margin: 30px 5px 10px 15px;	
+		display: block;
+	}
+	 
+ 
