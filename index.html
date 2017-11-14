@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Displaying tool tip using jQuery</title>
+	<!-- Invoke external javascript file -->
+	<link rel="stylesheet" type="text/css" href="formstyles.css">
+
+	<!-- use pre-defined jquery ui styles -->
+	<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+
+    <!-- use jQuery libraries -->
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- JavaScript code -->
+  	<script type="text/javascript">
+
+  		// use jQuery tooltip() to display tool tips of text fields
+  		$(function() {
+  			
+  			// set position 
+  			$(document).tooltip({
+  				 position: { my: "left+15 center", at: "right center"}
+  			});
+
+  		});
+  	</script>
+</head>
+<body>
+<form>
+	<!-- Create labels and text boxes -->
+	<label class="static" for="name">Name:</label>
+	<input type="text" id="name" name="name"  title="Please input your name" />
+
+	<label class="static" for="email">Email:</label>
+	<input type="text" id="email" name="email" title="Please input your email id" />
+
+	<label  class="static" for="age">Age:</label>
+	<input  type="number" id="age" name="age" min="18" max="60"  title="Please input your age. Min 18 and Max 60" />
+
+	<p id="note">Hover on the input fields to see the tool tip messages</p>
+
+	</form>
+
+
+</body>
+</html>
